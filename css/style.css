@@ -1,0 +1,32 @@
+/***DEBUG***/
+
+.debug-header {
+    height: 3.75rem;
+    border: 3px dashed royalblue;
+}
+
+.debug-col-auto {
+    background-color: aquamarine;
+}
+
+.debug-col {
+    background-color: aqua;
+}
+
+.debug-aside {
+    height: calc(100vh - 3.75rem);
+    background-color: cornflowerblue;
+    padding: 0 1.875rem;
+}
+
+.debug-col-main {
+    background-color: coral;
+}
+
+.debug-header-main {
+    background-color: blue;
+}
+
+.debug-color-card {
+    background-color: bisque;
+}
