@@ -10,29 +10,122 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <!--BS-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
 
     <body class="debug">
         
         <header class="debug-header">
 
-            <div class="row">
+            <div class="row mx-0">
 
-                <div class="col-auto debug-col-auto">
+                <div class="col-auto p-2 text-center">
 
-                    COL AUTO
+                    <img class="w-75" src="img/logo.svg" alt="logo-boolean">
                     
                 </div>
                 
-                <div class="col debug-col">
+                <div class="col p-2">
 
-                    COL
+                    <div class="input-group input-group-sm mb-3">
+                        
+                        <input type="text" class="form-control shadow-none bg-body-secondary border-secondary-subtle" placeholder="Prova a cercare: Lezioni di Lavarel">
+                        
+                    </div>
 
                 </div>
 
-                <div class="col-auto debug-col-auto">
+                <div class="col-auto p-2">
 
-                    COL AUTO
+                    <a href="#">
+
+                        <i class="bi bi-list-ul align-middle pe-2 my-fs text-dark"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="bi bi-question-circle-fill align-middle pe-2 my-fs text-dark"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="bi bi-three-dots-vertical align-middle pe-2 my-fs text-dark"></i>
+
+                    </a>
+
+                    <a class="bi bi-bell-fill my-fs text-warning text-nowrap" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+
+                    </a>
+                    
+                    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h6 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    
+                        <div class="offcanvas-body">
+
+                            <div class="row">
+
+                                <div class="col-6">
+                        
+                                <label for="inputname" class="form-label">Nome</label>
+                                <input type="text" class="form-control" aria-label="First name">
+                        
+                                </div>
+                        
+                                <div class="col-6">
+                        
+                                <label for="inputname" class="form-label">Cognome</label>
+                                <input type="text" class="form-control" aria-label="Last name">
+                        
+                                </div>
+                        
+                                <div class="col-6">
+                        
+                                <label for="inputemail" class="form-label mt-2">Email</label>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                        
+                                </div>
+                        
+                                <div class="col-6">
+                        
+                                <label for="inputname" class="form-label mt-2">Password</label>
+                                <input type="text" class="form-control" aria-label="Last name">
+                        
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label mt-2">Indirizzo</label>
+                                    <input type="text" class="form-control" id="inputAddress2">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputCity" class="form-label mt-2">Città</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="col-md-4">
+                                    <label for="inputState" class="form-label mt-2">Stato</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <label for="inputZip" class="form-label mt-2">Cap</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -42,7 +135,7 @@
 
         <main>
 
-            <div class="row g-0">
+            <div class="row mx-0 g-0">
 
                 <div class="col-auto debug-aside">
 
@@ -50,27 +143,45 @@
 
                 </div>
 
-                <div class="col debug-col-main">
+                <div class="col">
 
                     <div class="debug-header-main">
 
-                        <div class="row">
+                        <div class="row mx-0 py-3">
 
                             <div class="col-6">
 
-                                COL6
+                                <h2 class="fs-4 text-white">
+
+                                    Boolean
+
+                                </h2>
 
                             </div>
 
                             <div class="col-4">
 
-                                COL4
+                                <p class="students-online text-white my-0">
+
+                                    Studenti online gli ultimi trenta minuti
+
+                                </p>
+
+                                <span class="fs-4 text-white">
+
+                                    125
+
+                                </span>
 
                             </div>
 
                             <div class="col-2">
 
-                                COL2
+                                <p class="students-online text-white my-0">
+
+                                    Nuovo studente
+
+                                </p>
 
                             </div>
 
@@ -80,19 +191,66 @@
 
                     <div class="cards">
 
-                        <div class="row">
+                        <div class="row mx-0">
 
                             <div class="col-8">
 
-                                <div class="first-card debug-color-card">
+                                <div class="first-card">
                                     
-                                    PROSSIME CLASSI
+                                    <div class="card" style="width: 100%;">
+                                        <div class="card-header">
+                                          Prossime classi
+                                        </div>
+                                        <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">First</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row"></th>
+                                            <td>Mark</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"></th>
+                                            <td>Jacob</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+
+                                        </tbody>
+                                      </table>
+                                    </div>
 
                                 </div>
 
-                                <div class="second-card debug-color-card">
+                                <div class="second-card">
 
-                                    FAQ
+                                    <div class="card" style="width: 18rem;">
+
+                                        <div class="card-header">
+
+                                          FAQ
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
                                 
@@ -100,15 +258,31 @@
 
                             <div class="col-4">
 
-                                <div class="first-card debug-color-card">
+                                <div class="first-card">
 
-                                    TODO
+                                    <div class="card" style="width: 18rem;">
+
+                                        <div class="card-header">
+
+                                          TODO
+
+                                        </div>
+
+                                    </div>
                                     
                                 </div>
 
-                                <div class="second-card debug-color-card">
+                                <div class="second-card">
 
-                                    GRAPHIC IMG
+                                    <div class="card" style="width: 18rem;">
+
+                                        <div class="card-header">
+
+                                          GRAPHIC
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
