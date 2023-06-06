@@ -169,7 +169,7 @@
 
                         <div class="row mx-0 py-3">
 
-                            <div class="col-md-4 col-lg-5">
+                            <div class="col-sm-4 col-md-4 col-lg-5 ">
 
                                 <div>
 
@@ -197,7 +197,7 @@
 
                             </div>
 
-                            <div class="col-md-4 col-lg-4">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
 
                                 <p class="students-online text-white my-0">
 
@@ -213,7 +213,7 @@
 
                             </div>
 
-                            <div class="col-md-4 col-lg-3">
+                            <div class="order-first col-sm-4 order-sm-last col-md-4 col-lg-3">
 
                                 <p class="students-online text-white my-0 d-inline align-middle">
 
@@ -235,21 +235,21 @@
 
                                         <div class="row">
 
-                                            <div class="col-6">
+                                            <div class="col-12 col-sm-6">
                                     
                                                 <label for="inputname" class="form-label">Nome</label>
                                                 <input type="text" class="form-control" aria-label="First name">
                                     
                                             </div>
                                     
-                                            <div class="col-6">
+                                            <div class="col-12 col-sm-6">
                                     
                                                 <label for="inputname" class="form-label">Cognome</label>
                                                 <input type="text" class="form-control" aria-label="Last name">
                                     
                                             </div>
                                     
-                                            <div class="col-6">
+                                            <div class="col-12 col-sm-6">
                                     
                                                 <label for="inputemail" class="form-label mt-2">Email</label>
                                                 <div class="input-group flex-nowrap">
@@ -259,30 +259,39 @@
                                     
                                             </div>
                                     
-                                            <div class="col-6">
+                                            <div class="col-12 col-sm-6">
                                     
                                                 <label for="inputname" class="form-label mt-2">Password</label>
                                                 <input type="text" class="form-control" aria-label="Last name">
                                     
                                             </div>
 
-                                            <div class="col-12">
+                                            <div class="col-12 col-sm-6">
 
                                                 <label for="inputAddress" class="form-label mt-2">Indirizzo</label>
                                                 <input type="text" class="form-control" id="inputAddress2">
+
                                             </div>
-                                            <div class="col-md-6">
+
+                                            <div class="col-12 col-sm-6">
+
                                                 <label for="inputCity" class="form-label mt-2">Città</label>
                                                 <input type="text" class="form-control" id="inputCity">
+
                                             </div>
-                                            <div class="col-md-4">
+
+                                            <div class="col-12 col-sm-6">
+
                                                 <label for="inputState" class="form-label mt-2">Stato</label>
                                                 <select id="inputState" class="form-select">
                                                 <option selected>Choose...</option>
                                                 <option>...</option>
                                                 </select>
+
                                             </div>
-                                            <div class="col-md-2">
+
+                                            <div class="col-12 col-sm-6">
+
                                                 <label for="inputZip" class="form-label mt-2">Cap</label>
                                                 <input type="text" class="form-control" id="inputZip">
 
@@ -298,6 +307,26 @@
                                     
                                             </div>
                                             
+                                            <div class="input-group mt-4">
+
+                                                <div class="input-group-text">
+                                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Premi per proseguire" aria-label="Text input with checkbox">
+
+                                            </div>
+
+                                            <div class="col-3 mt-4">
+
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+
+                                            </div>
+
+                                            <div class="col-9 mt-4 text-left">
+
+                                                <button type="submit" class="btn btn-warning">Svuota</button>
+
+                                            </div>
 
                                         </div>
 
@@ -315,7 +344,7 @@
 
                         <div class="row mx-0 my-4">
 
-                            <div class="col-8">
+                            <div class="col-md-12 col-lg-8">
 
                                 <div class="first-card">
                                     
@@ -325,17 +354,17 @@
                                           Prossime classi
                                         </div>
 
-                                        <table>
+                                        <table class="table table-hover">
                                             <tr>
                                                 <th class="th-big">Nome</th>
-                                                <th>Data inizio</th>
+                                                <th class="d-none d-sm-block">Data inizio</th>
                                                 <th>ROI</th>
                                                 <th>Stato</th>
                                                 <th>Azioni</th>
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="d-none d-sm-block">15 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
@@ -345,7 +374,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 76</td>
-                                                <td>16 Feb 2021</td>
+                                                <td class="d-none d-sm-block">16 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
@@ -355,7 +384,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 77</td>
-                                                <td>17 Feb 2021</td>
+                                                <td class="d-none d-sm-block">17 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-warning text-white">Process</span></td>
                                                 <td>
@@ -365,7 +394,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 78</td>
-                                                <td>18 Feb 2021</td>
+                                                <td class="d-none d-sm-block">18 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
@@ -375,7 +404,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 79</td>
-                                                <td>19 Feb 2021</td>
+                                                <td class="d-none d-sm-block">19 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-danger">Failed</span></td>
                                                 <td>
@@ -385,7 +414,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 80</td>
-                                                <td>20 Feb 2021</td>
+                                                <td class="d-none d-sm-block">20 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
@@ -395,7 +424,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 81</td>
-                                                <td>21 Feb 2021</td>
+                                                <td class="d-none d-sm-block">21 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-danger">Failed</span></td>
                                                 <td>
@@ -405,7 +434,7 @@
                                             </tr>
                                             <tr>
                                                 <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 82</td>
-                                                <td>22 Feb 2021</td>
+                                                <td class="d-none d-sm-block">22 Feb 2021</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
@@ -437,7 +466,7 @@
                                                   Come aggiungere un nuovo studente?
                                                 </button>
                                               </h2>
-                                              <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample" style="">
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">Clicca sull'icona "+"</div>
                                               </div>
                                             </div>
@@ -447,7 +476,7 @@
                                                   Come posso accedere alle informazioni del mio account?
                                                 </button>
                                               </h2>
-                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">Clicca sull'icona della campanella</div>
                                               </div>
                                             </div>
@@ -457,8 +486,8 @@
                                                   Posso usare questa dashboard da mobile?
                                                 </button>
                                               </h2>
-                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
-                                                <div class="accordion-body">si </div>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">si</div>
                                               </div>
                                             </div>
 
@@ -470,7 +499,7 @@
                                 
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4">
 
                                 <div class="first-card">
 
