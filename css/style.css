@@ -17,6 +17,19 @@ header .col-auto a {
     font-size: 0.8rem;
 }
 
+.side-button {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.side-button:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+.nav-top-aside li {
+    list-style-type: none;
+}
 
 /***DEBUG***/
 
