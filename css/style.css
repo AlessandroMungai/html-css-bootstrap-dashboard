@@ -36,6 +36,10 @@ header .col-auto a {
     list-style-type: none;
 }
 
+.cc {
+    overflow: auto;
+}
+
 /***TABLE***/
 
 .avatar-table {
