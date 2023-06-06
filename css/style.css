@@ -1,3 +1,7 @@
+header {
+    height: 3.125rem;
+}
+
 header .my-fs {
     font-size: 0.8rem;
 }
@@ -5,6 +9,7 @@ header .my-fs {
 header .col-auto a {
     text-decoration: none;
 }
+
 
 /***MAIN HEADER***/
 
@@ -15,18 +20,17 @@ header .col-auto a {
 
 /***DEBUG***/
 
-.debug-header {
+/* .debug-header {
     height: 3.125rem;
-    /* border: 3px dashed royalblue; */
-}
+} */
 
-.debug-col-auto {
+/* .debug-col-auto {
     background-color: aquamarine;
 }
 
 .debug-col {
     background-color: aqua;
-}
+} */
 
 .debug-aside {
     height: calc(100vh - 3.125rem);
@@ -34,15 +38,16 @@ header .col-auto a {
     padding: 0 1.875rem;
 }
 
+/* 
 .debug-col-main {
     background-color: coral;
-}
+} */
 
 .debug-header-main {
     background-color: #1B72E8;
 }
 
-.debug-color-card {
+/* .debug-color-card {
     background-color: bisque;
     border: 2px dashed royalblue;
-}
+} */
