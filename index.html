@@ -8,9 +8,13 @@
 
         <!--BS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <!--BS-->
+        <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
+        <!--BS ICON-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
     <body class="debug">
@@ -165,17 +169,35 @@
 
                         <div class="row mx-0 py-3">
 
-                            <div class="col-6">
+                            <div class="col-md-4 col-lg-5">
 
-                                <h2 class="fs-4 text-white">
+                                <div>
 
-                                    Boolean
+                                    <h2 class="fs-4 text-white d-inline-block">
 
-                                </h2>
+                                        Boolean
+
+                                    </h2>
+
+                                    <span class="badge badge-style">Piano blaze</span>
+
+                                </div>
+
+                                <div class="badge ps-0">
+
+                                    <span class="badge badge-style">3 app</span>
+                                    <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
+                                    <span class="d-none d-lg-inline-block badge badge-style">Boolean mobile app</span>
+                                    <span class="d-none d-lg-inline-block badge badge-style">Boolean web app</span>
+                                    <span class="d-none d-lg-inline-block badge badge-style">Boolean blog app</span> 
+
+                                    <span class="d-lg-none badge badge-style">+</span>
+
+                                </div>
 
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-md-4 col-lg-4">
 
                                 <p class="students-online text-white my-0">
 
@@ -191,13 +213,97 @@
 
                             </div>
 
-                            <div class="col-2">
+                            <div class="col-md-4 col-lg-3">
 
-                                <p class="students-online text-white my-0">
+                                <p class="students-online text-white my-0 d-inline align-middle">
 
                                     Nuovo studente
 
+                                    <i class="bi bi-plus-square ps-2 fs-3 d-inline align-middle text-nowrap"type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                    </i>
+
                                 </p>
+
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+
+                                    <div class="offcanvas-header">
+                                        <h6 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h6>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+
+                                        <div class="row">
+
+                                            <div class="col-6">
+                                    
+                                                <label for="inputname" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" aria-label="First name">
+                                    
+                                            </div>
+                                    
+                                            <div class="col-6">
+                                    
+                                                <label for="inputname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" aria-label="Last name">
+                                    
+                                            </div>
+                                    
+                                            <div class="col-6">
+                                    
+                                                <label for="inputemail" class="form-label mt-2">Email</label>
+                                                <div class="input-group flex-nowrap">
+                                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div class="col-6">
+                                    
+                                                <label for="inputname" class="form-label mt-2">Password</label>
+                                                <input type="text" class="form-control" aria-label="Last name">
+                                    
+                                            </div>
+
+                                            <div class="col-12">
+
+                                                <label for="inputAddress" class="form-label mt-2">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress2">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label mt-2">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label mt-2">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label mt-2">Cap</label>
+                                                <input type="text" class="form-control" id="inputZip">
+
+                                            </div>
+
+                                            <div class="col-12">
+                                    
+                                                <label for="inputfile" class="form-label mt-2">Foto</label>
+                                                <div class="input-group flex-nowrap">
+                                                    <span class="input-group-text" id="addon-wrapping">Scegli file</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                                </div>
+                                    
+                                            </div>
+                                            
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -207,58 +313,144 @@
 
                     <div class="cards">
 
-                        <div class="row mx-0">
+                        <div class="row mx-0 my-4">
 
                             <div class="col-8">
 
                                 <div class="first-card">
                                     
                                     <div class="card" style="width: 100%;">
+
                                         <div class="card-header">
                                           Prossime classi
                                         </div>
-                                        <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">First</th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row"></th>
-                                            <td>Mark</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row"></th>
-                                            <td>Jacob</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                          </tr>
-                                          <tr>
 
-                                        </tbody>
-                                      </table>
+                                        <table>
+                                            <tr>
+                                                <th class="th-big">Nome</th>
+                                                <th>Data inizio</th>
+                                                <th>ROI</th>
+                                                <th>Stato</th>
+                                                <th>Azioni</th>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                                <td>15 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 76</td>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 77</td>
+                                                <td>17 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-warning text-white">Process</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 78</td>
+                                                <td>18 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 79</td>
+                                                <td>19 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 80</td>
+                                                <td>20 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 81</td>
+                                                <td>21 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="img-table me-2" src="img/class-avatar.jpg" alt="avatar">Classe 82</td>
+                                                <td>22 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="bi bi-pencil-fill pe-2"></i>
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </td>
+                                            </tr>
+                                            
+                                          </table>
+
+                                        <!-- <table class="table">
+
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>  
+                                                    <th scope="col w-50">Nome</th>
+                                                    <th scope="col">Data inizio</th>
+                                                    <th scope="col">Roi</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                </tr>
+
+                                                <tbody>
+
+                                                    <tr>
+                                                      <th scope="row"></th>
+                                                      <td><img class="avatar-table me-2" src="img/class-avatar.jpg" alt="">classe 75</td>
+                                                      <td>15 Feb 2021</td>
+                                                      <td>20%</td>
+                                                      <td><span class="badge text-bg-success">Done</span></td>
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </thead>
+
+                                        </table> -->
+
                                     </div>
 
                                 </div>
 
                                 <div class="second-card">
 
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
 
                                         <div class="card-header">
 
@@ -276,7 +468,7 @@
 
                                 <div class="first-card">
 
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
 
                                         <div class="card-header">
 
@@ -290,7 +482,7 @@
 
                                 <div class="second-card">
 
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card">
 
                                         <div class="card-header">
 
