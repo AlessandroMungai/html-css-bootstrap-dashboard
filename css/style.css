@@ -36,10 +36,6 @@ header .col-auto a {
     list-style-type: none;
 }
 
-.cc {
-    overflow: auto;
-}
-
 /***TABLE***/
 
 .avatar-table {
@@ -72,6 +68,17 @@ table tr i {
     cursor: pointer;
 }
 
+.card ul img {
+    width: 100%;
+}
+
+.p-graphic {
+    font-size: 0.8rem;
+}
+
+.card ul li {
+    font-size: 0.9rem;
+}
 
 /***DEBUG***/
 
@@ -88,10 +95,11 @@ table tr i {
 } */
 
 .debug-aside {
-    height: calc(100vh - 3.125rem);
+    /* height: calc(100vh - 3.125rem); */
     background-color: #0E253A;
     padding: 0 1.875rem;
 }
+
 
 /* 
 .debug-col-main {
