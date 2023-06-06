@@ -1,3 +1,5 @@
+/***HEADER***/
+
 header {
     height: 3.125rem;
 }
@@ -10,8 +12,13 @@ header .col-auto a {
     text-decoration: none;
 }
 
+/***MAIN***/
+
 /***MAIN HEADER***/
 
+.header-main {
+    background-color: #1B72E8;
+}
 .students-online {
     font-size: 0.8rem;
 }
@@ -20,6 +27,16 @@ header .col-auto a {
     background-color: #1e5195;
     font-size: 0.6rem;
     cursor: pointer;
+}
+
+/***ASIDE-COL***/
+
+.aside-style {
+    /* height: calc(100vh - 3.125rem); */
+    background-color: #0E253A;
+    background-image: url(../img/sidebar-bg.png);
+    object-fit: cover;
+    padding: 0 1.875rem;
 }
 
 .side-button {
@@ -68,6 +85,8 @@ table tr i {
     cursor: pointer;
 }
 
+/***CARD SECTION***/
+
 .card ul img {
     width: 100%;
 }
@@ -94,21 +113,22 @@ table tr i {
     background-color: aqua;
 } */
 
-.debug-aside {
-    /* height: calc(100vh - 3.125rem); */
+/* .debug-aside {
+    height: calc(100vh - 3.125rem);
     background-color: #0E253A;
+    background-image: url(../img/sidebar-bg.png);
+    object-fit: cover;
     padding: 0 1.875rem;
-}
-
+} */
 
 /* 
 .debug-col-main {
     background-color: coral;
 } */
 
-.debug-header-main {
+/* .debug-header-main {
     background-color: #1B72E8;
-}
+} */
 
 /* .debug-color-card {
     background-color: bisque;
